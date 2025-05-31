@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 440px;
+    padding: 20px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input.displayView {
+    background-color: #333;
+    border: none;
+    height: 96px;
+    color: white;
+    font-size: 2.9rem;
+    text-align: right;
+    padding: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.centerContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.button,
+.buttonClear,
+.buttonCal, .minusButton {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    font-size: 32px;
+}
+
+.button:hover,
+.buttonClear:hover,
+.right .buttonCal:hover,
+.topContent .button:hover,
+.right .button:hover, .minusButton:hover {
+    background-color: rgba(128, 128, 128, 0.496);
+    cursor: pointer;
+}
+
+.topContent .button,
+.right .button,
+.right .buttonCal, .minusButton {
+    color: white;
+    background-color: #FFA600;
+}
+
+.buttonClear {
+    background-color: #F54749;
+    color: white;
+}
+
+.buttonCal {
+    height: 200px;
+}

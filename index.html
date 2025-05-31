@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8b27cfd748.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" class="displayView" id="displayValue" readonly>
+            <div class="buttonContainer">
+                <div class="left">
+                    <div class="topContent">
+                        <div class="button" onclick="showValue('+')" id="add-button">+</div>
+                        <div class="button" onclick="showValue('-')" id="add-button">-</div>
+                        <div class="button" onclick="showValue('*')" id="add-button">x</div>
+                    </div>
+                    <div class="centerContent">
+                        <div class="button" onclick="showValue('1')" id="add-button">1</div>
+                        <div class="button" onclick="showValue('2')" id="add-button">2</div>
+                        <div class="button" onclick="showValue('3')" id="add-button">3</div>
+                        <div class="button" onclick="showValue('4')" id="add-button">4</div>
+                        <div class="button" onclick="showValue('5')" id="add-button">5</div>
+                        <div class="button" onclick="showValue('6')" id="add-button">6</div>
+                        <div class="button" onclick="showValue('7')" id="add-button">7</div>
+                        <div class="button" onclick="showValue('8')" id="add-button">8</div>
+                        <div class="button" onclick="showValue('9')" id="add-button">9</div>
+                    </div>
+                    <div class="bottomContent">
+                        <div class="button" onclick="showValue('0')" id="add-button">0</div>
+                        <div class="button" onclick="showValue('.')" id="add-button">.</div>
+                        <div class="button" onclick="removeValue()">del</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="button" onclick="showValue('/')" id="add-button">:</div>
+                    <div class="buttonClear" onclick="clearValue()">ac</div>
+                    <div class="minusButton" onclick="minusValue()">+/-</div>
+                    <div class="buttonCal" onclick="calculation()">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
